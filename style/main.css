@@ -105,3 +105,40 @@ nav a:hover {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
+hr {
+    width: 1280px;
+    margin: auto;
+    background-color: #ffffff80;
+    border-width: 1px;
+}
+
+.first_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_screen h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+    margin-top: 180px;
+}
+
+.scroll {
+    font-weight: 700;
+    font-style: 18px;
+    line-height: 25;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 100px;
+}
+
+.scroll::before {
+    content: url("/style/img/mouse.svg")
+}
