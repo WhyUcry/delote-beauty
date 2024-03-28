@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;               
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #111111; 
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url("./img/bgc.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #00000080;
+    background-blend-mode: color;
+}
+
+main {
+    flex: auto;
+}
+
+header {
+    width: 1280px;
+    margin: 30px auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+nav a:hover {
+    color: #CDAA7D; 
+    border-bottom: 1px solid #CDAA7D;
+}
+
+.logo {
+    margin: 0 40px;
+}
+
+.instagram, .logo {
+    border: none !important;
+}
+
+.instagram:hover path {
+    stroke: #CDAA7D;
+}
+
+#menu, .nav_contact {
+    display: none;
+}
+
+#menu:checked ~ .nav_contact {
+    transform: translate(475px, 0);
+}
+
+.nav_contact {
+    transition: all 1s linear;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color: #ffffff;
+    height: 100vh;
+    width: 475px;
+    background-color: #111111;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 80px;
+    border-left: 1px solid gray; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.nav_contact label {
+    position: absolute;
+    top: 42px;
+    left: 82px;
+    
+}
+
+.nav_contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav_contact ul li:first-child {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
