@@ -69,7 +69,7 @@ nav a:hover {
 .nav_contact {
     transition: all 1s linear;
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     color: #ffffff;
     height: 100vh;
@@ -115,8 +115,9 @@ hr {
 
 .first_screen {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
+    height: 100vh;
+    text-align: center;
 }
 
 .first_screen h1 {
@@ -141,4 +142,61 @@ hr {
 
 .scroll::before {
     content: url("/style/img/mouse.svg")
+}
+
+.commas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 856px;
+    height: 385px;
+    margin: auto;
+    text-align: center;
+    top: 120px;
+    font-size: 27px;
+}
+
+.commas img {
+    width: 80px;
+    height: 64px;
+}
+
+.commas blockquote {
+    margin-top: 60px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+.service {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 1296px;
+    height: 832px;
+    left: 312px;
+}
+
+.service img {
+    width: 416px;
+    height: 386px;
+}
+
+.icons {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    width: 1296px;
+    height: 144px;
+}
+
+.icons span {
+    height: 144px;
 }
