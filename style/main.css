@@ -194,9 +194,48 @@ hr {
     gap: 60px;
     justify-content: center;
     width: 1296px;
-    height: 144px;
+    height: 144px;-
 }
 
 .icons span {
     height: 144px;
 }
+
+/* FOOTER */
+
+.ftr {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 192px;
+    margin-left: 312px;
+    width: 1296px;
+    height: 368px;
+}
+
+.footer1, .footer2, .footer3, .footer4 {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer2 li {
+    list-style: none;
+}
+
+.footer3 li {
+    list-style: none;
+}
+
